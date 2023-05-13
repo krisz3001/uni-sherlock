@@ -14,3 +14,11 @@ footer p{
 iframe{
     width: 100%;
 }
+@media print{
+    img{
+        width: unset!important;
+    }
+    figcaption{
+        display: none;
+    }
+}
