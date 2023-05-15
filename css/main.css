@@ -107,6 +107,14 @@ footer{
 footer p{
     margin: 0;
 }
+@media screen and (max-width: 768px){
+    .portray{
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 800px){
     nav{
         height: initial;
@@ -178,5 +186,8 @@ footer p{
     }
     #gallery figure{
         width: 60%!important;
+    }
+    .carousel{
+        width: 20%!important;
     }
 }
