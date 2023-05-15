@@ -67,6 +67,9 @@ a[href="#"]{
     background-color: black;
     color: #fff !important;
 }
+a[target="_blank"]::after{
+    content: " (A link új lapon nyílik)";
+}
 a:visited{
     color: unset;
 }
@@ -142,5 +145,10 @@ footer p{
     }
     #gallery figure{
         width: unset!important;
+    }
+}
+@media (prefers-contrast: more) {
+    h1{
+        color: pink!important;
     }
 }

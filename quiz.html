@@ -1,39 +1,105 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sherlock Holmes kvíz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="./img/icon.png">
 </head>
+
 <body>
-     <div id="container">
-        <header id="header">
+    <div id="container">
+        <header>
             <h1>Sherlock Holmes</h1>
             <h2>Kvíz</h2>
             <a href="#content" class="noprint">Ugrás a tartalomhoz</a>
         </header>
-        <nav id="navbar">
+        <nav>
             <a href="./index.html">Kezdőlap</a>
             <a href="./author.html">A szerzőről</a>
             <a href="./titles.html">Művek</a>
             <a href="#">Kvíz</a>
             <a href="./gallery.html">Galéria</a>
         </nav>
-         <main>
+        <main>
             <section class="content-block" id="content">
                 <h3>Kvízkérdések</h3>
                 <hr>
-                
+                <section class="mt-4">
+                    <h4>1. kérdés: Hogy hívják Sherlock Holmes házvezetőnőjét?</h4>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q1" id="q1-1">
+                        <label for="q1-1" class="form-check-label d-block">Miss Marple</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q1" id="q1-2">
+                        <label for="q1-2" class="form-check-label d-block">Martha</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q1" id="q1-3">
+                        <label for="q1-3" class="form-check-label d-block">Mrs. Hudson</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q1" id="q1-4">
+                        <label for="q1-4" class="form-check-label d-block">Nincs házvezetőnője</label>
+                    </div>
+                </section>
+                <section class="mt-4">
+                    <h4>2. kérdés: Melyik évben játszódik a Sherlock Holmes: Árnyjáték című film?</h4>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q2" id="q2-1">
+                        <label for="q2-1" class="form-check-label d-block">1899</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q2" id="q2-2">
+                        <label for="q2-2" class="form-check-label d-block">1891</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q2" id="q2-3">
+                        <label for="q2-3" class="form-check-label d-block">1893</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q2" id="q2-4">
+                        <label for="q2-4" class="form-check-label d-block">1890</label>
+                    </div>
+                </section>
+                <section class="mt-4">
+                    <h4>3. kérdés: Hány Sherlock Holmes regényt írt Sir Arthur Conan Doyle?</h4>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q3" id="q3-1">
+                        <label for="q3-1" class="form-check-label d-block">4</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q3" id="q3-2">
+                        <label for="q3-2" class="form-check-label d-block">7</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q3" id="q3-3">
+                        <label for="q3-3" class="form-check-label d-block">9</label>
+                    </div>
+                    <div class="form-check ms-4">
+                        <input class="form-check-input" type="radio" name="q3" id="q3-4">
+                        <label for="q3-4" class="form-check-label d-block">15</label>
+                    </div>
+                </section>
+                <div class="d-flex align-items-center mt-4">
+                    <button class="btn btn-primary noprint" onclick="check()">Ellenőrzés</button>
+                    <span id="result" class="ms-2"></span>
+                </div>
             </section>
-         </main>
-         <footer class="content-block">
+        </main>
+        <footer class="content-block">
             <p>Készítette: Horváth Krisztián</p>
         </footer>
-     </div>
-     <a href="#" class="position-fixed bottom-0 end-0 noprint bg-transparent m-2"><img src="./img/top.png" alt="Lap tetejére" title="Lap tetejére"></a>
+    </div>
+    <a href="#" class="position-fixed bottom-0 end-0 noprint bg-transparent m-2"><img src="./img/top.png"
+            alt="Lap tetejére" title="Lap tetejére"></a>
+    <script src="quiz.js"></script>
 </body>
+
 </html>
