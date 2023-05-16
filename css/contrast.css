@@ -1,0 +1,22 @@
+*, .text-dark, nav a:hover, .navi a:hover, figcaption{
+    color: yellow!important;
+}
+.content-block, nav, header, .navi, .header{
+    background-color: #000!important;
+}
+input, textarea{
+    color: black!important;
+}
+input[type="submit"], input[type="reset"], button{
+    color: white!important;
+}
+a[href="#"]{
+    background-color: white;
+    color: #000!important;
+}
+table, th, td{
+    border-color: white;
+}
+.bg-secondary{
+    background-color: #000!important;
+}
