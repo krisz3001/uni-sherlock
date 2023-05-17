@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <button id="accessibility" onclick="toggleContrast()"><img src="./img/accessibility.png" draggable="false" alt="Magas kontrasztos megjelenés" title="Magas kontrasztos megjelenés"></button>
+    <button id="accessibility" class="noprint" onclick="toggleContrast()"><img src="./img/accessibility.png" draggable="false" alt="Magas kontrasztos megjelenés" title="Magas kontrasztos megjelenés"></button>
     <div id="container">
         <header>
             <h1>Sherlock Holmes</h1>
@@ -99,7 +99,7 @@
                 <hr>
                 <div class="mb-3">
                     <label for="name" class="form-label">Név</label>
-                    <input type="text" id="name" name="name" required class="form-control" maxlength="70">
+                    <input type="text" id="name" name="name" size="50" required class="form-control" maxlength="50">
                 </div>
                 <div class="mb-3">
                     <label for="msg" class="form-label">Üzenet</label>

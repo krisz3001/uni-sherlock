@@ -108,7 +108,7 @@ footer p{
     margin: 0;
 }
 @media screen and (max-width: 768px){
-    .portray{
+    .portrait{
         width: 50%;
         display: flex;
         margin: 0 auto;
@@ -180,5 +180,11 @@ footer p{
     }
     .carousel{
         width: 20%!important;
+    }
+    a[target="_blank"]::after{
+        content: "";
+    }
+    #author-img{
+        width: 40%;
     }
 }

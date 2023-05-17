@@ -4,6 +4,9 @@
 .content-block, nav, header, .navi, .header{
     background-color: #000!important;
 }
+p, i, span, strong{
+    font-size: 1.5rem;
+}
 input, textarea{
     color: black!important;
 }
